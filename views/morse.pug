@@ -1,0 +1,19 @@
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' type='text/css' href='css/style.css')
+    script(src='/js/morse.js')
+    link(href='https://fonts.googleapis.com/css?family=Lobster|Special+Elite' rel='stylesheet')
+    title Morse
+body.r13
+h1 Morse Code
+include mixins/topnav.pug
+br
+.textBoard
+    textarea#message2.t1(cols='50' rows='10' autofocus='') Enter your message here
+    br
+    br
+    button#button1(type='button' onclick='encodeMorse()') Encode Message
+    span 
+    button#button1(type='button' onclick='decodeMorse()') Decode Message

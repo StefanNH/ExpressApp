@@ -1,0 +1,21 @@
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' type='text/css' href='css/style.css')
+    script(src='/js/base64.js')
+    link(href='https://fonts.googleapis.com/css?family=Lobster|Special+Elite' rel='stylesheet')
+    title Base64
+body.r13
+h1 Base64 Encryption
+include mixins/topnav.pug
+br
+.textBoard
+    textarea#message4.t1(cols='50' rows='10' autofocus='') Enter your message here
+    br
+    br
+    button#button1(type='button' onclick='encodeB64()') Encode Message
+    span 
+    button#button1(type='button' onclick='decodeB64()') Decode Message
+    div
+    br

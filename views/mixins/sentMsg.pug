@@ -1,0 +1,8 @@
+mixin sentMsg(msg)
+  .mssg
+    .date= msg.date
+    .send to: #{msg.sendTo}
+    br
+    .text message: #{msg.msg}
+    br
+    .cipher encoder: #{msg.cipher}

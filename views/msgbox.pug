@@ -1,0 +1,36 @@
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' type='text/css' href='/css/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Lobster|Special+Elite' rel='stylesheet')
+    title Message box
+body.logBody
+h1 Send Message
+include mixins/topnav.pug
+br
+form.logF(method='POST',action='/users/msgbox')
+  .container
+    if errors
+      each error in errors
+        p= error.msg
+    else if success_msg != ''
+        p= success_msg
+    else    
+    br
+    label(for='email')
+      b Send to @email
+      br
+    input(type='email', placeholder='Enter Email', name='email', required='')
+    br
+    label(for='text')
+      b Message
+      br
+    textarea(type='text', name='message',cols='50', rows='10', autofocus='', placeholder='Enter your message', required='')
+    br
+    label(for='cipher')
+      b encoded with
+      br
+    input(type='text', placeholder='cipher', name='cipher', required='')
+    br
+    button.registerbtn(type='submit') Send message

@@ -1,0 +1,42 @@
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' type='text/css' href='/css/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Lobster|Special+Elite' rel='stylesheet')
+    title Register
+body.logBody
+h1 Register
+include mixins/topnav.pug
+br
+form.logF(method='POST',action='/users/register')
+  .container
+    if errors
+      each error in errors
+        p= error.msg
+    else    
+    label(for='uname')
+      b Username
+      br
+    input(type='text', placeholder='Enter Username', name='uname', required='')
+    br
+    label(for='email')
+      b Email
+      br
+    input(type='email', placeholder='Enter Email', name='email', required='')
+    br
+    label(for='psw')
+      b Password
+      br
+    input(type='password', minlength='4', placeholder='Enter Password', name='psw', required='')
+    br
+    label(for='psw-repeat')
+      b Repeat Password
+      br
+    input(type='password', minlength='4', placeholder='Repeat Password', name='psw2', required='')
+    br
+    p
+      | By creating an account you agree to our 
+      a(href='#') Terms & Privacy
+      | .
+    button.registerbtn(type='submit') Register

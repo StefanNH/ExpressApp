@@ -1,0 +1,32 @@
+mixin topnav
+  ul.topnav
+    li
+      a.active(href='/home') Home
+    li
+      a(href='/rot13') Rot13
+    li
+      a(href='/rotation') Rotation cipher
+    li
+      a(href='/morse') Morse code
+    li
+      a(href='/base64') Base64
+    li
+      a(href='/about') About
+    li
+    .dropdown
+      button.dropbtn
+        | Message Box 
+        i.fa.fa-caret-down
+      .dropdown-content
+        a(href='/users/msgbox') Send Message
+        a(href='/users/inbox') InBox
+        a(href='/users/outbox') OutBox
+    if user
+      li.right
+        a(href='/users/logout') Logout
+    else
+      li.right
+        a(href='/users/login') Login
+    br
+    
++topnav

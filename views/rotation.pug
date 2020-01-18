@@ -1,0 +1,23 @@
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' type='text/css' href='css/style.css')
+    script(src='/js/rotation.js')
+    link(href='https://fonts.googleapis.com/css?family=Lobster|Special+Elite' rel='stylesheet')
+    title Rotation
+body.r13
+h1 Rotation Cipher
+include mixins/topnav.pug
+br
+.textBoard
+    textarea#message3.t1(cols='50' rows='10' autofocus='') Enter your message here
+    br
+    br
+    button#button1(type='button' onclick='encodeRot()') Encode Message
+    span 
+    input#selectNum(type='number' min='1' max='25' placeholder='Select')
+    span 
+    button#button1(type='button' onclick='decodeRot()') Decode Message
+    div
+    br

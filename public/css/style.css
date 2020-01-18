@@ -1,0 +1,282 @@
+h1 {
+    text-align: center;
+    color: blueviolet;
+    text-shadow: 2px 1px 5px rgb(3, 3, 150);
+    font-family: 'Special Elite', cursive;
+    font-size: 45px
+}
+div.wrap p a.pages{color: rgb(52, 73, 196); font-size: large}
+div.wrap p a.pages:hover{color: red}
+
+.reg{
+  border-radius: 2px;
+  color: blueviolet;
+  margin: 1px;
+  padding: 2px 3px;
+  overflow: hidden;
+  float: right;
+  text-emphasis: none;
+  text-decoration: none;
+  background-color: rgb(46, 45, 45);
+}
+.reg:hover{background: black;}
+
+ul {
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 1;
+    padding: 1;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color:blueviolet;}
+
+ul.topnav li.right {
+  background-color: blueviolet;
+  cursor: pointer;
+  float: right;
+}
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:blueviolet;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div.textBoard{
+    text-align: center;
+}
+footer {
+    color: white;
+    background: none;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
+    font-size: 12px
+  }
+.t1{
+    border-radius: 10px;
+    text-align: center;
+    color:  rgb(58, 8, 68);
+    text-shadow: 1px 1px blue;
+    opacity: 0.8;
+    text-emphasis: bold;
+}
+
+.wrap{
+  text-align: center;
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black,
+  1px 0 black, 0 -1px black;
+}
+::placeholder{color: white;}
+
+/*"#" is used to operate on "id"*/
+#button1 {
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid #333;
+}
+#button1:hover
+{
+  background-color:rgb(88, 35, 138);
+  cursor: pointer;
+}
+#selectNum
+{
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+#selectNum:hover
+{
+  background-color:rgb(88, 35, 138);
+  cursor: pointer;
+}
+.r13 {
+    background-image: url("/pictures/purpleCS.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.idx {
+  background-image: url("/pictures/backlit.jpg");
+
+/* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position-x: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+body.logBody{
+  background-color: #111;
+}
+/* Bordered form */
+form.logF {
+  background-color: rgb(157, 167, 223);
+  text-align: center;
+  border: 3px solid rgb(157, 167, 223);
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=email] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button.btnLogin, button.registerbtn {
+  background-color: blueviolet;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+label, .container{
+  color: rgb(82, 47, 116);
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder, input[type=email]::placeholder{
+  color: grey;
+}
+.sm{
+  text-align: center;
+  color: red;
+}
+
+.mssg{
+  border: 2px solid #111111;
+}
+
+.date{
+  font-size: 75%;
+  color: #333;
+  float: right;
+  font-weight: bold;
+}
+
+.send{
+  color:rgb(21, 61, 107);
+  font-size: 110%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(53, 15, 83);
+  text-align: center;
+  font-weight: bolder;
+}
+
+.cipher{
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

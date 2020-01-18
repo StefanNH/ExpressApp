@@ -1,0 +1,8 @@
+mixin resMsg(msg)
+  .mssg
+    .date= msg.date
+    .send from: #{msg.sendBy}
+    br
+    .text message: #{msg.msg}
+    br
+    .cipher encoder: #{msg.cipher}
